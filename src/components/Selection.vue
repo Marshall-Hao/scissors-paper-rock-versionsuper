@@ -1,5 +1,5 @@
 <template>
-      <div :class="selection">
+    <div :class="selection">
         <router-link :to="{name: 'Game', params: {select: selection}}">
             <div class="bg-white p-16 rounded-full">
                 <img v-if="selection === 'scissors'" src="../assets/images/icon-scissors.svg" :alt="selection" :class="selectionin">
@@ -18,13 +18,11 @@ import { ref } from '@vue/reactivity'
 export default {
     props: ['selection'],
     setup(props) {
-        const imageAddress = ref('')
         const selectionin = ref('')
 
-        imageAddress.value = '../assets/images/icon-rock.svg'
         selectionin.value = `${props.selection}in`
 
-    return {imageAddress, selectionin}
+    return {selectionin}
     }
 }
 </script>
