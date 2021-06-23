@@ -12,7 +12,7 @@
         </div>
     </div>
 
-    <Result :userPick="selected" :housePick="housePicked"/>
+    <Result :userPick="selected" :housePick="housePicked" v-if="housePick"/>
 
     <div class="grid justify-items-center">
         <span class="uppercase text-2xl tracking-wider font-mono font-bold text-white filter drop-shadow-lg mb-12">The house picked</span>

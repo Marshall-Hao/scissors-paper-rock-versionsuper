@@ -1,5 +1,5 @@
 <template>
-    <div class="justify-self-center flex space-x-10 mt-14">
+    <div class="justify-self-center flex space-x-10 mt-14 items-center">
         <Combat />
     </div>
 </template>

@@ -3,7 +3,7 @@
         <img src="../assets/images/logo-bonus.svg" alt="logo">
         <div class="bg-white py-3 px-12 rounded-xl text-center">
             <p class="text-lg font-semibold text-blue-800 tracking-wider font-mono">SCORE</p>
-            <p class="text-6xl font-bold text-gray-800 tracking-tighter ">12</p>
+            <p class="text-6xl font-bold text-gray-800 tracking-tighter ">{{ score }}</p>
         </div>
     </div>
 </template>
@@ -12,7 +12,9 @@
 import { ref } from '@vue/reactivity'
 export default {
     setup() {
-        const score = ref('')
+        const score = ref(0)
+
+        return {score}
     }
 }
 </script>
