@@ -1,5 +1,4 @@
 <template>
-  <Banner />
   <router-view/>
   <Rules />
 </template>

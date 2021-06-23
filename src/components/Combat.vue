@@ -54,7 +54,7 @@ export default {
                 housePick.value = true 
                 housePicked.value = selections.value[Math.floor(Math.random()*selections.value.length)]
                 housePickedStyle.value = `${housePicked.value}-combat`
-            }, 1000)
+            }, 600)
         )
 
         return {selected, selectedStyle, housePicked, housePickedStyle, housePick}
