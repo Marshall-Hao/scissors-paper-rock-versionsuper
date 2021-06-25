@@ -11,7 +11,7 @@
         <div v-if="win">
             <div class="text-6xl font-bold font-mono tracking-tight text-white drop-shadow-lg uppercase">
                 <span class="mr-6">you</span>
-                <span>win</span>
+                <span class="animate-bounce w-6 h-6">win</span>
             </div>
         </div>
         <div v-else>

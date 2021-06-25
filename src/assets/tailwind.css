@@ -6,7 +6,7 @@
 
 @layer components {
     .scissors {
-        @apply rounded-full justify-self-center p-4 md:p-6 absolute left-16 md:left-20 bottom-48 md:bottom-60 bg-gradient-to-br from-yellow-400 to-yellow-500;
+        @apply rounded-full justify-self-center p-4 md:p-6 absolute left-16 md:left-20 bottom-44 md:bottom-60 bg-gradient-to-br from-yellow-400 to-yellow-500;
     }
 
     .scissorsin {

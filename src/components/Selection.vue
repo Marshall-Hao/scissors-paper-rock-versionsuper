@@ -1,7 +1,7 @@
 <template>
     <div :class="selection">
         <router-link :to="{name: 'Game', params: {select: selection}}">
-            <div class="bg-white p-10 md:p-16 rounded-full">
+            <div class="bg-white hover:bg-blue-500 p-10 md:p-16 rounded-full">
                 <img v-if="selection === 'scissors'" src="../assets/images/icon-scissors.svg" :alt="selection" :class="selectionin">
                 <img v-if="selection === 'paper'" src="../assets/images/icon-paper.svg" :alt="selection" :class="selectionin">
                 <img v-if="selection === 'rock'" src="../assets/images/icon-rock.svg" :alt="selection" :class="selectionin">
