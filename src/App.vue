@@ -1,6 +1,8 @@
 <template>
-  <router-view/>
-  <Rules />
+  <div class="grid relative px-10 bg-gradient-radial transform  from-blue-600 to-blue-900 h-screen w-screen bg-no-repeat">
+    <router-view/>
+    <Rules />  
+  </div>
 </template>
 
 <script>
