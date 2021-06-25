@@ -1,31 +1,31 @@
 <template>
-    <div class="grid justify-items-center">
-        <span class="uppercase text-2xl tracking-wider font-mono font-bold text-white filter drop-shadow-lg mb-12">you picked</span>
+    <div class="grid justify-items-center order-1 mr-10 md:mr-0">
+        <span class="uppercase text-xs md:text-2xl tracking-wider font-mono font-bold text-white filter drop-shadow-lg mb-12">you picked</span>
         <div :class="selectedStyle">
-            <div class="bg-white p-28 rounded-full grid">
-                <img v-if="selected === 'scissors'" src="../assets/images/icon-scissors.svg" :alt="selected" class="transform scale-150 justify-self-center">
-                <img v-if="selected === 'paper'" src="../assets/images/icon-paper.svg" :alt="selected" class="transform scale-150 justify-self-center">
-                <img v-if="selected === 'rock'" src="../assets/images/icon-rock.svg" :alt="selected" class="transform scale-150 justify-self-center">
-                <img v-if="selected === 'lizard'" src="../assets/images/icon-lizard.svg" :alt="selected" class="transform scale-150 justify-self-center">
-                <img v-if="selected === 'spock'" src="../assets/images/icon-spock.svg" :alt="selected" class="transform scale-150 justify-self-center">
+            <div class="bg-white px-8 py-7 md:p-28 rounded-full grid">
+                <img v-if="selected === 'scissors'" src="../assets/images/icon-scissors.svg" :alt="selected" class="transform scale-100 md:scale-150 justify-self-center">
+                <img v-if="selected === 'paper'" src="../assets/images/icon-paper.svg" :alt="selected" class="transform scale-100 md:scale-150 justify-self-center">
+                <img v-if="selected === 'rock'" src="../assets/images/icon-rock.svg" :alt="selected" class="transform scale-100 md:scale-150 justify-self-stretch">
+                <img v-if="selected === 'lizard'" src="../assets/images/icon-lizard.svg" :alt="selected" class="transform scale-100 md:scale-150 justify-self-center">
+                <img v-if="selected === 'spock'" src="../assets/images/icon-spock.svg" :alt="selected" class="transform scale-100 md:scale-150 justify-self-center">
             </div>    
         </div>
     </div>
 
-    <Result :userPick="selected" :housePick="housePicked" v-if="housePick"/>
+    <Result :userPick="selected" :housePick="housePicked" v-if="housePick" class="order-3 md:order-2 mt-10 md:mt-0"/>
 
-    <div class="grid justify-items-center">
-        <span class="uppercase text-2xl tracking-wider font-mono font-bold text-white filter drop-shadow-lg mb-12">The house picked</span>
+    <div class="grid justify-items-center order-2 md:order-3">
+        <span class="uppercase text-xs md:text-2xl tracking-wider font-mono font-bold text-white filter drop-shadow-lg mb-12">The house picked</span>
         <div :class="housePickedStyle">
-            <div class="p-28 rounded-full grid" :class="housePick ? 'bg-white' : 'bg-blue-800 bg-opacity-70'">
+            <div class="px-8 py-7 md:p-28 rounded-full grid" :class="housePick ? 'bg-white' : 'bg-blue-800 bg-opacity-70'">
                 <div v-if="!housePick" class="justify-self-center">
-                    <div class="animate-spin h-14 w-14 rounded-full border-t-3 border-indigo-400 text-center text-indigo-400 font-xs font-bold uppercase"></div>
+                    <div class="animate-spin p-8 rounded-full border-t-3 border-indigo-400 text-center text-indigo-400 font-xs font-bold uppercase"></div>
                 </div>
-                <img v-if="housePicked === 'scissors'" src="../assets/images/icon-scissors.svg" :alt="housePicked" class="transform scale-150 justify-self-center">
-                <img v-if="housePicked === 'paper'" src="../assets/images/icon-paper.svg" :alt="housePicked" class="transform scale-150 justify-self-center">
-                <img v-if="housePicked === 'rock'" src="../assets/images/icon-rock.svg" :alt="housePicked" class="transform scale-150 justify-self-center">
-                <img v-if="housePicked === 'lizard'" src="../assets/images/icon-lizard.svg" :alt="housePicked" class="transform scale-150 justify-self-center">
-                <img v-if="housePicked === 'spock'" src="../assets/images/icon-spock.svg" :alt="housePicked" class="transform scale-150 justify-self-center">
+                <img v-if="housePicked === 'scissors'" src="../assets/images/icon-scissors.svg" :alt="housePicked" class="transform scale-100 md:scale-150 justify-self-center">
+                <img v-if="housePicked === 'paper'" src="../assets/images/icon-paper.svg" :alt="housePicked" class="transform scale-100 md:scale-150 justify-self-center">
+                <img v-if="housePicked === 'rock'" src="../assets/images/icon-rock.svg" :alt="housePicked" class="transform scale-100 md:scale-150 justify-self-center">
+                <img v-if="housePicked === 'lizard'" src="../assets/images/icon-lizard.svg" :alt="housePicked" class="transform scale-100 md:scale-150 justify-self-center">
+                <img v-if="housePicked === 'spock'" src="../assets/images/icon-spock.svg" :alt="housePicked" class="transform scale-100 md:scale-150 justify-self-center">
             </div>    
         </div>
     </div>

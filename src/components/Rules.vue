@@ -15,7 +15,7 @@
             <img @click="showRules= false" src="../assets/images/icon-close.svg" alt="close" class="self-center object-contain cursor-pointer opacity-80 hover:opacity-100 visible md:invisible" >
         </div>
 
-        <div class="justify-self-center md:justify-self-end mb-10 mt-40 md:mt-20">
+        <div class="justify-self-center md:justify-self-end mb-32 md:mb-48 mt-28 md:mt-12">
             <button @click="showRules = true" 
             class="px-10 py-2 rounded-2xl border border-white tracking-widest text-white text-md font-mono font-medium focus:outline-none hover:text-gray-200 hover:border-gray-200">
                 RULES

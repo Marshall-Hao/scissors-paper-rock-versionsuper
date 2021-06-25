@@ -1,7 +1,7 @@
 <template>
 <Banner />
 <div class="justify-self-center mt-36 relative grid">
-  <img src="../assets/images/bg-pentagon.svg" alt="pentagon">
+  <img src="../assets/images/bg-pentagon.svg" alt="pentagon" class="h-52 md:h-auto" >
   <SelectionsList />
 </div>
 </template>

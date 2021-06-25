@@ -1,6 +1,6 @@
 <template>
     <Banner />
-    <div class="justify-self-center flex space-x-10 mt-14 items-center">
+    <div class="justify-self-center flex flex-wrap md:space-x-10 mt-28 md:mt-14 items-center justify-center">
         <Combat />
     </div>
 </template>
