@@ -1,6 +1,39 @@
-# scissors-paper-rock-versionsuper
+# Scissors-Paper-Rock-Spock-Lizard
 
-## Project setup
+This is a small web-app game created by Marshall
+
+This game can lets user choose one of the Scissors,Rocks,Paper,Spock&Lizard and compare the choice to the House
+
+
+## Technologies Used
+- Generating using [Vue3] (https://v3.vuejs.org/)
+- Using [Tailwindcss] for styling (https://tailwindcss.com/)
+- [JavaScript] (https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Firebase] for deployment (https://firebase.google.com/)
+
+## Features
+As a Player:
+- I can choose one of the Scissors,Rocks,Paper,Spock&Lizard and compare the choice to the House
+- Rule explaination: (./src/assets/images/image-rules-bonus.svg)
+
+## Screenshot
+WebApp screenshot
+User login:
+![user_login:](./app/assets/images/user_login.png)
+Wallet:
+![wallet_info:](./app/assets/images/wallet_info.png)
+Withdraw:
+![withdraw:](./app/assets/images/withdraw.png)
+Transfer:
+![transfer:](./app/assets/images/transfer.png)
+Transactions:
+![transaction_sender:](./app/assets/images/transactions_sender.png)
+![transaction_receiver:](./app/assets/images/transactions_receiver.png)
+
+## Setup
+
+For Localhost
+
 ```
 npm install
 ```
@@ -10,10 +43,29 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Online Visit(https://scissors-paper-rock.web.app/)
+## Structure
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Virtual Dom Structure
+
+Main entrance: ```src/App.vue```
+               ```src/main.js```
+
+Views are in the ```src/views ```
+  - Home:  ```Home.vue```
+  - Game: ```Game.vue```
+
+Components in the ```src/components```
+  - Banner: ```Banner.vue```
+  - Combat: ```Combat.vue```
+  - Result: ```Result.vue```
+  - Rules:  ```Rules.vue```
+  - Selection:  ```Selection.vue```
+  - SelectionsList:  ```SelectionsList.vue```      
+
+router is in the ```src/router```
+
+
+
+
+
