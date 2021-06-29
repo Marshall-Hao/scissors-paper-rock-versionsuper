@@ -18,11 +18,11 @@ As a Player:
 
 ## Screenshot
 Home:
-![Home](src/screenshots/Home.png)
+![Home](./src/assets/screenshots/Home.png)
 Game:
-![Game](src/screenshots/Game.png)
+![Game](./src/assets/screenshots/Game.png)
 Rules
-![Rules](src/screenshots/Rules.png)
+![Rules](./src/assets/screenshots/Rules.png)
 
 ## Setup
 
