@@ -17,18 +17,12 @@ As a Player:
 - Rule explaination: (./src/assets/images/image-rules-bonus.svg)
 
 ## Screenshot
-WebApp screenshot
-User login:
-![user_login:](./app/assets/images/user_login.png)
-Wallet:
-![wallet_info:](./app/assets/images/wallet_info.png)
-Withdraw:
-![withdraw:](./app/assets/images/withdraw.png)
-Transfer:
-![transfer:](./app/assets/images/transfer.png)
-Transactions:
-![transaction_sender:](./app/assets/images/transactions_sender.png)
-![transaction_receiver:](./app/assets/images/transactions_receiver.png)
+Home:
+![Home](./src/screenshots/Home.png)
+Game:
+![Game](./src/screenshots/Game.png)
+Rules
+![Rules](./src/screenshots/Rules.png)
 
 ## Setup
 
